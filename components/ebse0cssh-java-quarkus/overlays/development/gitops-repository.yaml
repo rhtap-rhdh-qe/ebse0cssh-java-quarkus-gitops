@@ -1,0 +1,6 @@
+apiVersion: "pipelinesascode.tekton.dev/v1alpha1"
+kind: Repository
+metadata:
+  name: ebse0cssh-java-quarkus-gitops-repository
+spec:
+  url: https://github.com/rhtap-rhdh-qe/ebse0cssh-java-quarkus-gitops

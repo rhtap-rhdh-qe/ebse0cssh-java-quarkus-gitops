@@ -1,0 +1,18 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata: 
+  labels: 
+    app.kubernetes.io/instance: ebse0cssh-java-quarkus
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: ebse0cssh-java-quarkus 
+  name: ebse0cssh-java-quarkus
+spec:
+  port:
+    targetPort: 8081 
+  tls:
+    insecureEdgeTerminationPolicy: Redirect
+    termination: edge
+  to:
+    kind: Service
+    name: ebse0cssh-java-quarkus
+    weight: 100 
